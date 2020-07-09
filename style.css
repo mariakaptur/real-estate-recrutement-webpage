@@ -290,6 +290,7 @@ span.subtitle {
 .quiz-image {
   background: url('img/quiz.jpg');
   background-size: cover;
+  height: 100%;
 }
 
 .blueSection p {
@@ -323,7 +324,13 @@ span.subtitle {
 .accompagnes-image {
   background: url('img/vous-etes-bien-accompagnes.jpg');
   background-size: cover;
+    height: 100%;
 }
+
+.quiz-image, .accompagnes-image {height: 45vw; padding: 0 !important; margin: 0 !important;}
+
+.quiz-image, .accompagnes-image {height: 35vw;
+  width: 50vw;}
 
 /* FOOTER */
 
@@ -331,9 +338,20 @@ span.subtitle {
   color: #838383;
   background-color: #353535;
   font-size: .9em;
+  padding: 0 2em;
 }
 
 .date {
   color: #838383;
   font-size: .9em;
 }
+
+@media (min-width: 992px) {
+.quiz-image, .accompagnes-image {height: 45vw;
+  width: 50vw;}
+}
+@media (max-width: 991px) {
+  .quiz-image, .accompagnes-image {height: 45vw;
+    width: 100vw;}
+  }
+  
