@@ -25,6 +25,8 @@ body {
 
 #accueil.container-fluid {
   padding: 4em 0 2em 0;
+  margin: 0 !important;
+  display: inline-table;
 }
 
 .container-fluid {
@@ -32,6 +34,8 @@ body {
   padding-right: 0;
   margin: 0 15px;
 }
+
+
 .votreProfil.container-fluid {
   width: 90% !important;
   display: table-cell;
@@ -172,7 +176,6 @@ h4 {
   font-size: 1.1em;
   color: #272626;
   text-align: center;
-  padding: 1em;
 }
 
 h1 {
@@ -187,13 +190,16 @@ h2 {
   height: 0% !important;
 }
 
-.votreProfil h2 {padding: 0 !important;;}
+.votreProfil h2 {padding: 0 !important;}
 
 h3 {
   font-size: 2.5rem;
   text-shadow: -1px 2px 4px rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 1em 0 0.5em;
+}
+
+.blueSection h3 {
+  padding: 0.5em 1em !important;
 }
 
 h4 {
@@ -218,33 +224,58 @@ h4 {
 }
 
 
-.votreProfil [class*="profil-"] {
+.votreProfil [class*="img-"] {
   display: inline-block;
   width: 100px;
   height: 100px;
-
   background-size: cover;
   border-radius: 50%;
   margin: 10px auto 20px auto;
 }
 
-.votreProfil .profil-1 {
+.votreProfil .img-1 {
   background: url('img/profil1.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.votreProfil .profil-2 {
+.votreProfil .img-2 {
   background: url('img/profil2.jpg');
   background-size: 190%;
-  background-position: 45% 22%;
+  background-position: center;
 }
 
-.votreProfil .profil-3 {
+.votreProfil .img-3 {
   background: url('img/profil3.jpg');
   background-size: cover;
-  background-position: 37%;
+  background-position: center;
 }
+
+.vousInteresser [class*="img-"] {
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+}
+.vousInteresser .img-1 {
+  background: url('img/profil1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.vousInteresser .img-2 {
+  background: url('img/profil2.jpg');
+  background-size: 190%;
+  background-position: center;
+}
+
+.vousInteresser .img-3 {
+  background: url('img/profil3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+a:not([href]):not([tabindex]) {color: #3ac6d5 !important;}
 
 .anchor {
   display: block;
@@ -278,7 +309,4 @@ h4 {
   background-size: cover;
 }
 
-@media (min-width: 768px) and (max-width: 1125px) {
-  .collapse {
-      display: none !important;
-  }
+
