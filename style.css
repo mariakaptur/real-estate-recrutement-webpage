@@ -366,6 +366,13 @@ span.subtitle {
   font-size: .9em;
 }
 
+@media (min-width: 1250px) {
+  .whiteSectionImage h3,
+  .blueSection h3 {
+    font-size: 2.5em !important;
+  }
+}
+
 @media (min-width: 992px) {
   .blueSection h3 {
     text-shadow: -1px 2px 4px rgba(0, 0, 0, 0.8);
@@ -412,8 +419,6 @@ span.subtitle {
   text-justify {
     max-width: 85%;
   }
-
-
 }
 
 @media (max-width: 720px) {
@@ -480,6 +485,8 @@ span.subtitle {
     width: 100vw;
   }
 }
+
+/* ANIMATION FADE IN */
 
 .fade-in {
   animation: fadeIn ease 2.5s;
