@@ -282,8 +282,6 @@ span.subtitle {
   background-position: center;
 }
 
-
-
 .vousInteresser {
   text-align: left;
 }
@@ -301,7 +299,10 @@ span.subtitle {
 
 .quiz-image {
   background: url('img/quiz.jpg');
-  background-size: cover;
+  background-size: cover; 
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right 0%;
   height: 100%;
 }
 
@@ -336,6 +337,8 @@ span.subtitle {
 .accompagnes-image {
   background: url('img/vous-etes-bien-accompagnes.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   height: 100%;
 }
 
